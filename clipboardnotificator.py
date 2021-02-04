@@ -3,11 +3,11 @@ from plyer import notification
 import pyperclip
 import time
 
-class ClipboardNotificater:
+class ClipboardNotificator:
     def __init__(self):
         self.previousText = pyperclip.paste()
     def notificate(self):
-        notification.notify(title="ClipboardNotificater", message="クリップボードにコピーされました", app_name="ClipboardNotificater")
+        notification.notify(title="ClipboardNotificator", message="クリップボードにコピーされました", app_name="ClipboardNotificator")
 
     def check(self):
         text = pyperclip.paste()
@@ -17,7 +17,7 @@ class ClipboardNotificater:
 
 
 if __name__ == '__main__':
-    clipboardNotificater = ClipboardNotificater()
+    clipboardNotificator = ClipboardNotificator()
     while True:
-        clipboardNotificater.check()
+        clipboardNotificator.check()
         time.sleep(1)

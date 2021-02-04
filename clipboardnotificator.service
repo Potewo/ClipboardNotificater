@@ -1,0 +1,10 @@
+[Unit]
+Description = Clipboard notificator
+
+[Service]
+ExecStart = $HOME/PythonProjects/ClipboardNotificator/clipboardnotificator.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
