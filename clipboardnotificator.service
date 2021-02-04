@@ -2,7 +2,7 @@
 Description = Clipboard notificator
 
 [Service]
-ExecStart = $HOME/PythonProjects/ClipboardNotificator/clipboardnotificator.py
+ExecStart = commad_path
 Restart = always
 Type = simple
 
