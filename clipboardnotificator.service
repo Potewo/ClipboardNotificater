@@ -2,9 +2,9 @@
 Description = Clipboard notificator
 
 [Service]
-ExecStart = commad_path
+ExecStart = command_path
 Restart = always
 Type = simple
 
 [Install]
-WantedBy = multi-user.target
+WantedBy = default.target
